@@ -53,7 +53,7 @@ class KaolinDatasetMeta(type):
         return type.__new__(metacls, cls_name, base_cls, class_dict)
 
 
-class KaolinDataset(Dataset, metaclass=KaolinDatasetMeta):
+class KaolinDataset(Dataset):
     """
     Abstract class for dataset with handling of multiprocess or cuda preprocessing.
 
